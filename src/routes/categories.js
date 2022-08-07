@@ -1,10 +1,8 @@
 import { Router } from 'express';
-import categories from '../data/category.js';
+import { getCategories } from '../controller/categories.js';
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    return res.send(categories);
-});
+router.get('/', getCategories);
 
 export default router;
