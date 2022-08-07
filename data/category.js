@@ -12,3 +12,5 @@ export const categories = [
     name: "Sports",
   },
 ];
+
+export default categories;
